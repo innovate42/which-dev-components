@@ -1,0 +1,85 @@
+{
+  "name": "@limio/component-which-grouped-offers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./index.js",
+  "scripts": {
+    "build": "yarn component:webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-solid-svg-icons": "^6.1.2",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "query-string": "^6.11.1",
+    "ramda": "^0.28.0",
+    "reactstrap": "^8.9.0"
+  },
+  "peerDependencies": {
+    "@sentry/browser": "*",
+    "react": "*",
+    "react-dom": "*",
+    "react-redux": "*",
+    "redux": "*"
+  },
+  "limioProps": [
+    {
+      "id": "bestValueText",
+      "label": "Best value offer label",
+      "type": "string",
+      "default": "Best value"
+    },
+    {
+      "id": "termsUrl",
+      "label": "Terms & conditions url",
+      "type": "string",
+      "default": "https://www.which.co.uk/help/terms-and-conditions/1955/your-which-membership"
+    },
+    {
+      "id": "groupLabels",
+      "label": "Group labels",
+      "type": "list",
+      "fields": {
+        "name": {
+          "id": "id",
+          "label": "ID",
+          "type": "string"
+        },
+        "url": {
+          "id": "label",
+          "label": "URL",
+          "type": "string"
+        },
+        "thumbnail": {
+          "id": "thumbnail",
+          "label": "Thumbnail",
+          "type": "string",
+          "format": "uri",
+          "purpose": "image"
+        }
+      },
+      "default": [
+        {
+          "id": "digital",
+          "label": "Digital"
+        },
+        {
+          "id": "fullaccess",
+          "label": "Full Access"
+        },
+        {
+          "id": "magazine",
+          "label": "Magazine"
+        }
+      ]
+    },
+    {
+      "id": "componentId",
+      "label": "Component Id",
+      "type": "string",
+      "default": "grouped-offers-component-limio"
+    }
+  ]
+}

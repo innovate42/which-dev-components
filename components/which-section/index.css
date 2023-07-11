@@ -1,0 +1,150 @@
+.Section {
+  align-items: center;
+  color: #8855ff;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+  background-color: rgb(239, 239, 239);
+  height: auto;
+  max-height: 360px;
+}
+
+.Section .SectionWrapper {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  max-width: 1440px;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-height: 360px;
+}
+
+@media screen and (-ms-high-contrast: active),
+  screen and (-ms-high-contrast: none) {
+  .Section .SectionWrapper {
+    margin: 0;
+  }
+}
+
+.Section .SectionWrapper .BodyContainer {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  font-family: National2-Bold,Arial,sans-serif;
+  max-height: 360px;
+}
+
+.Section .SectionWrapper .ImageContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  position: relative;
+  width: 40%;
+  max-width: 100%;
+}
+
+
+.Section .SectionWrapper.bottom .ImageContainer {
+  width: 100%;
+  margin: 0 3rem 3em;
+  flex-direction: row;
+}
+
+.Section .SectionWrapper .ImageContainer .Image {
+  width: 100%;
+}
+
+.Section .SectionWrapper .ImageContainer .ImageCaption {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.4);
+  padding: 0.4em 0;
+}
+
+.Section .SectionWrapper.top .ImageContainer,
+.Section .SectionWrapper.bottom .ImageContainer {
+  flex-direction: row;
+  padding: 0 3em;
+}
+
+.Section .SectionWrapper.top .ImageContainer .Image,
+.Section .SectionWrapper.bottom .ImageContainer .Image {
+  width: 10em;
+}
+
+.Section .SectionWrapper .TextContainer {
+  margin: 3rem;
+  width: 60%;
+  max-width: 100%;
+}
+
+.Section .SectionWrapper .TextContainer .Header {
+  color: #000;
+  font-family: National2-Bold,Arial,sans-serif;
+  text-align: left;
+  font-size: 48px;
+  letter-spacing: 0;
+  line-height: 60px;
+  margin-bottom: 0.5em;
+}
+
+.Section .SectionWrapper .TextContainer .Text {
+  color: #000;
+  font-family: National2-Regular,Arial,sans-serif;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 32px;
+  text-align: left;
+}
+
+@media (max-width: 599px) {
+  .Section {
+    font-size: 90%;
+  }
+
+  .Section .SectionWrapper {
+    flex-wrap: wrap;
+  }
+
+  .Section .SectionWrapper.right .BodyContainer,
+  .Section .SectionWrapper .BodyContainer {
+    flex-direction: column;
+  }
+
+  .Section .SectionWrapper.top .ImageContainer,
+  .Section .SectionWrapper.bottom .ImageContainer,
+  .Section .SectionWrapper .ImageContainer {
+    padding: 1em 3em;
+    width: 100%;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .Section .SectionWrapper .ImageContainer .Image.Circle {
+    width: 70vw;
+    height: 70vw;
+    margin: 0 auto;
+  }
+
+  .Section .SectionWrapper.bottom .ImageContainer .Image,
+  .Section .SectionWrapper.top .ImageContainer .Image {
+    width: 100%;
+    height: unset;
+  }
+
+  .Section .SectionWrapper.bottom .ImageContainer .ImageCaption,
+  .Section .SectionWrapper.top .ImageContainer .ImageCaption {
+    margin: 0;
+    flex-direction: row;
+    text-align: center;
+  }
+
+  .Section .SectionWrapper .TextContainer {
+    margin: 1.5rem 3rem 3rem 3rem;
+    width: 100%;
+  }
+}

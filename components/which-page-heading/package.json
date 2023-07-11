@@ -1,0 +1,37 @@
+{
+  "name": "@limio/component-which-page-heading",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./index.js",
+  "scripts": {
+    "build": "yarn component:webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "ramda": "^0.28.0",
+    "reactstrap": "^8.9.0"
+  },
+  "peerDependencies": {
+    "@sentry/browser": "*",
+    "react": "*",
+    "react-dom": "*",
+    "react-redux": "*",
+    "redux": "*"
+  },
+  "limioProps": [
+    {
+      "id": "heading",
+      "label": "Heading",
+      "type": "string",
+      "default": "Lorem ipsum dolor sit amet"
+    },
+    {
+      "id": "componentId",
+      "label": "Component Id",
+      "type": "string",
+      "default": "headings-limio"
+    }
+  ]
+}

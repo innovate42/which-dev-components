@@ -1,0 +1,54 @@
+{
+  "name": "@limio/component-which-section",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./index.js",
+  "scripts": {
+    "build": "yarn component:webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "ramda": "^0.28.0",
+    "reactstrap": "^8.9.0"
+  },
+  "peerDependencies": {
+    "@sentry/browser": "*",
+    "react": "*",
+    "react-dom": "*",
+    "react-redux": "*",
+    "redux": "*"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.18.6"
+  },
+  "limioProps": [
+    {
+      "id": "image",
+      "label": "Image",
+      "type": "string",
+      "default": "",
+      "format": "uri",
+      "purpose": "image"
+    },
+    {
+      "id": "header",
+      "label": "Header",
+      "type": "string",
+      "default": "Lorem ipsum dolor sit amet."
+    },
+    {
+      "id": "text",
+      "label": "Text",
+      "type": "richtext",
+      "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+      "id": "componentId",
+      "label": "Component Id",
+      "type": "string",
+      "default": "section-limio"
+    }
+  ]
+}

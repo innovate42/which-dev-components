@@ -1,0 +1,86 @@
+{
+  "name": "@limio/component-which-faq-banner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./index.js",
+  "scripts": {
+    "build": "yarn component:webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "ramda": "^0.28.0",
+    "reactstrap": "^8.9.0"
+  },
+  "peerDependencies": {
+    "@sentry/browser": "*",
+    "react": "*",
+    "react-dom": "*",
+    "react-redux": "*",
+    "redux": "*"
+  },
+  "limioProps": [
+    {
+      "id": "headline",
+      "label": "FAQ Headline",
+      "type": "string",
+      "default": "Common questions"
+    },
+    {
+      "id": "faqItems",
+      "label": "FAQ Items",
+      "type": "list",
+      "fields": {
+        "question": {
+          "id": "question",
+          "label": "Question",
+          "type": "string"
+        },
+        "answer__limio_richtext": {
+          "id": "answer__limio_richtext",
+          "label": "Answer",
+          "type": "richtext"
+        }
+      },
+      "default": [
+        {
+          "question": "When can I cancel?",
+          "answer__limio_richtext": "<p>You can cancel your membership at any time, and we’ll take no more payments.</p><p><br></p><p><strong>Monthly</strong></p><p>You are charged monthly on a rolling basis. For example if you have paid £7.99 for your first month and you cancel, this will cancel all future payments.</p><p><br></p><p><strong>Annual</strong></p><p>You are charged annually on a rolling basis. For example if you have paid £79 for your first year and you cancel, this will cancel all future payments.</p><p><br></p><p>In either case, you are entitled to an initial 14 day cooling off period when you can request a refund - read more.</p>"
+        },
+        {
+          "question": "How can I cancel?",
+          "answer__limio_richtext": "<p>Call&nbsp;02921 682114&nbsp;or&nbsp;<a href=\"mailto:which@which.co.uk\" rel=\"noopener noreferrer\">email</a>&nbsp;or write to our&nbsp;<a href=\"https://www.which.co.uk/about-which/contact-us\" rel=\"noopener noreferrer\">customer service centre in Cardiff</a>&nbsp;with your name and membership number.</p>"
+        },
+        {
+          "question": "Do you have a trial?",
+          "answer__limio_richtext": "<p>If you are looking to try Which? For a single review or just generally you can get your first month for £5.</p><p><br></p><p><em>Cancel anytime and we’ll take no more payments.</em></p>"
+        },
+        {
+          "question": "Can I give a Which? Subscription as a gift?",
+          "answer__limio_richtext": "<p>Yes we offer gift subscriptions over the phone.</p><p><br></p><p>Please call 02921 682114 and ask for a gift subscription and we will be happy to help.</p>"
+        },
+        {
+          "question": "Do you offer legal or consumer advice?",
+          "answer__limio_richtext": "<p><strong>Buying advice</strong></p><p><br></p><p>We offer 1-1 buying advice with our full access subscription.</p><p><br></p><p><strong>Consumer advice</strong></p><p><br></p><p>We offer free and impartial advice on Legal and consumer issues</p><p><br></p><p>via our <a href=\"https://www.which.co.uk/consumer-rights?utm_source=which&amp;utm_medium=referral&amp;utm_campaign=FAQs&amp;utm_content=do_you_offer\" rel=\"noopener noreferrer\"><u>consumer rights hub</u></a>.</p><p><br></p><p><strong>Legal</strong></p><p><br></p><p>We offer tailored, affordable advice from our experts at <a href=\"https://legalservice.which.co.uk/?utm_source=which&amp;utm_medium=referral&amp;utm_campaign=FAQs&amp;utm_content=do_you_offer\" rel=\"noopener noreferrer\"><u>Which? Legal</u></a>.</p>"
+        },
+        {
+          "question": "What are the Which? Apps compatible with?",
+          "answer__limio_richtext": "<p>The <strong>Which app</strong> is available on both the Apple App store and Google Play store.</p><p><br></p><p>iPhone - Requires iOS 11.0 or later.</p><p><br></p><p>iPad - Requires iPadOS 11.0 or later.</p><p><br></p><p>iPod touch - Requires iOS 11.0 or later.</p><p><br></p><p>Mac - Requires macOS 11.0 or later and a Mac with the Apple M1 chip.</p><p>The <strong>Which Magazine</strong> app is available on both the Apple App store and Google Play store.</p><p><br></p><p>iPhone - Requires iOS 11.0 or later.</p><p><br></p><p>iPad - Requires iPadOS 11.0 or later.</p><p><br></p><p>iPod touch - Requires iOS 11.0 or later.</p><p><br></p><p>Mac - Requires macOS 11.0 or later and a Mac with the Apple M1 chip.</p>"
+        }
+      ]
+    },
+    {
+      "id": "notice",
+      "label": "FAQ Notice",
+      "type": "richtext",
+      "default": "<p>If you have any further questions please contact <a href=\"https://www.which.co.uk/about-which/get-in-touch-aBnhv8z1Uslr\" rel=\"noopener noreferrer\">Which? Customer support</a>. We’ll get back to you between 8:30am-6pm weekdays and 9am-1pm Saturdays.</p>"
+    },
+    {
+      "id": "componentId",
+      "label": "Component Id",
+      "type": "string",
+      "default": "faq-banner-limio"
+    }
+  ]
+}

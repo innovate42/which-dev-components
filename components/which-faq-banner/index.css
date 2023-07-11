@@ -1,0 +1,178 @@
+.FaqBanner {
+  align-items: center;
+  background-color: white;
+  color: #444;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+.FaqBanner .FaqWrapper {
+  max-width: 1200px;
+  position: relative;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+}
+
+.FaqBanner .FaqWrapper h2 {
+  margin-bottom: 0;
+  margin-top: 0;
+  text-align: left;
+  align-self: flex-start;
+  padding-bottom: 22px;
+  margin-left: 0.5em;
+  font-family: National2-Bold, Arial, sans-serif;
+  color: #000000;
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: 30px;
+}
+
+#faq-banner-limio > div > p {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 0rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.FaqBanner .FaqWrapper .AccordionContainer {
+  margin: 0 1rem 0px;
+}
+
+.FaqBanner .FaqWrapper .AccordionContainer .FaqItem {
+  max-width: 900px;
+  color: #000000;
+  font-size: 19px;
+  letter-spacing: 0;
+  line-height: 25px;
+  font-weight: normal;
+  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.FaqBanner .FaqWrapper .AccordionContainer .FaqItem button {
+  height: 76px;
+}
+
+dt:hover {
+  background: #d7effa;
+}
+
+dt button:hover {
+  background: #d7effa;
+}
+
+.FaqBanner .FaqWrapper .AccordionContainer .FaqItem .AccordionItem {
+  align-items: center;
+  background-color: #ffffff;
+  border: none;
+  color: #444;
+  cursor: pointer;
+  display: flex;
+  font-family: unset;
+  font-size: unset;
+  justify-content: space-between;
+  outline: none;
+  text-align: left;
+  width: 100%;
+  padding: 0;
+}
+
+.FaqBanner .FaqWrapper .AccordionContainer .FaqItem .AccordionItem:hover {
+  border-width: 1px;
+  border-style: solid;
+}
+
+.FaqBanner .FaqWrapper .AccordionContainer .FaqItem .AccordionItem:focus {
+  border-width: 2px;
+}
+
+.FaqBanner .FaqWrapper .AccordionContainer .FaqItem .AccordionItem .Question {
+  font-weight: 700;
+  margin: 0;
+  color: #000000;
+  font-size: 19px;
+  letter-spacing: 0;
+  line-height: 25px;
+  font-family: National2-Regular, Arial, sans-serif;
+}
+
+.FaqBanner .FaqWrapper .AccordionContainer .FaqItem .AccordionItem .Arrow {
+  margin-left: 0.75em;
+  width: 1.25rem;
+}
+
+.FaqBanner .FaqWrapper .AccordionContainer .FaqItem .AccordionItem .Arrow.active {
+  content: url("https://which-dev.prod.limio.com/public/187803f9-de9c-4251-8198-8cc9cc7b0cf1/Icons_Navigational_minus.svg")
+}
+
+.FaqBanner .FaqWrapper .AccordionContainer .FaqItem .Answer {
+  margin: 0;
+  opacity: 0.9;
+  color: #000000;
+  font-size: 19px;
+  letter-spacing: 0;
+  line-height: 25px;
+  font-family: National2-Regular, Arial, sans-serif;
+}
+
+.FaqBanner .FaqWrapper .AccordionContainer .FaqItem .Answer *:last-child {
+  margin-bottom: 0em;
+}
+
+.FaqBanner .FaqWrapper .AccordionContainer .FaqItem .Panel {
+  background-color: #ffffff;
+  max-height: 0;
+  overflow: hidden;
+  margin-bottom: 0;
+  padding: 0 2rem 0 0;
+  text-align: left;
+}
+
+.FaqBanner .FaqWrapper .AccordionContainer .FaqItem .Panel strong {
+  font-family: National2-Medium;
+}
+
+.FaqBanner .FaqWrapper .AccordionContainer .FaqItem .Panel.active {
+  max-height: none;
+  margin-bottom: 0.5em;
+  padding: 0;
+}
+
+.FaqBanner .FaqWrapper .AccordionContainer .FaqItem {
+  border-top: 0.5px solid black;
+}
+
+.FaqBanner .FaqWrapper .AccordionContainer .FaqItem:nth-last-child(1) {
+  border-top: 0.5px solid black;
+  border-bottom: 0.5px solid black;
+}
+
+.FaqNotice {
+  max-width: 900px;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.FaqNotice p {
+  font-family: National2-Regular;
+  font-size: 19px;
+  line-height: 25px;
+}
+
+@media (max-width: 599px) {
+  .FaqBanner {
+    font-size: 90%;
+  }
+
+  .FaqBanner .FaqWrapper .AccordionContainer .FaqItem .Answer ul {
+    padding-inline-start: 1em;
+  }
+}
