@@ -15,10 +15,19 @@ import "./App.css";
 // import MediafinBusinessPackHeading from "../../components/mediafin-business-pack-heading";
 // import MediafinBusinessPackSection from "../../components/mediafin-business-pack-section";
 import WhichSection from "../../components/which-section";
+import WhichButton from "../../components/which-button";
 
 import { footerSectionProps } from "./props";
 
-const props = { image: "https://which-dev.prod.limio.com/public/48c9df2b-b06f-4730-aa37-29c0ebd8f6ff/hero_banner_png.png", header: "Spend wisely – join Which?", text: "Our tests find you the best products to buy and show you the ones to avoid, so you don’t waste your money." };
+const props = {
+  image:
+    "https://which-dev.prod.limio.com/public/48c9df2b-b06f-4730-aa37-29c0ebd8f6ff/hero_banner_png.png",
+  header: "Spend wisely – join Which?",
+  text:
+    "Our tests find you the best products to buy and show you the ones to avoid, so you don’t waste your money.",
+  copy: <h2>Click me</h2>,
+  alertMessage: "this is my alert message",
+};
 
 function createLocalStore(initialState) {
   const store = createStore((x) => x, {});
@@ -35,7 +44,10 @@ function App() {
     params.get("endpoint") || "https://localhost:9002"
   );
   const [key, setKey] = useState(0);
-  const [selectedComponents, setSelectedComponents] = useState([WhichSection]);
+  const [selectedComponents, setSelectedComponents] = useState([
+    WhichSection,
+    WhichButton,
+  ]);
 
   return (
     <div>

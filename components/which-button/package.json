@@ -1,0 +1,46 @@
+{
+  "name": "@limio/component-which-button",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./index.js",
+  "scripts": {
+    "build": "yarn component:webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "ramda": "^0.28.0",
+    "reactstrap": "^8.9.0"
+  },
+  "peerDependencies": {
+    "@sentry/browser": "*",
+    "react": "*",
+    "react-dom": "*",
+    "react-redux": "*",
+    "redux": "*"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.18.6"
+  },
+  "limioProps": [
+    {
+      "id": "copy",
+      "label": "Copy",
+      "type": "richtext",
+      "default": "Click me"
+    },
+    {
+      "id": "alertMessage",
+      "label": "Text",
+      "type": "string",
+      "default": "This message is shown in the alert"
+    },
+    {
+      "id": "componentId",
+      "label": "Component Id",
+      "type": "string",
+      "default": "section-limio"
+    }
+  ]
+}
