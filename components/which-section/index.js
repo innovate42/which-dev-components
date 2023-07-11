@@ -10,7 +10,6 @@ export default function WhichSection({image, header, text, componentId}): React.
           <div className="TextContainer">
             <h2 className="Header" data-limio-prop="header">
               {header}
-              Limio PoC 11/7/2023
             </h2>
             <div className="Text" data-limio-prop="text__limio_richtext" dangerouslySetInnerHTML={{ __html: text }} />
           </div>
